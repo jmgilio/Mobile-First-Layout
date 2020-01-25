@@ -1,0 +1,286 @@
+/* Global Layout Set-up */
+* { 
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    background: rgb(247, 247, 247);
+  }
+  /* Link Styles */
+  
+  /* Section Styles */
+
+.name {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    font-weight: 100;
+    padding: 20px 0px;
+  }
+
+  header {
+      text-align: center;
+  }
+
+  .main-nav {
+      width: 95%;
+      text-align: center;
+      margin: auto;
+      display: inline-block;
+  }
+
+  .main-nav li {
+    background: white;
+    list-style: none;
+    border-radius: 6px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 4px;
+  }
+
+  a:link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: black;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: rgb(71, 71, 71);
+    text-decoration: none;
+  }
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+  #profile-image {  
+      background: grey;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+      display: block;
+      width: 70%;
+  }
+
+  .info {
+      text-align: center;
+      color: rgba(167, 164, 164, 0.932);
+      margin-top: 20px;
+      margin-bottom: 50px;
+      line-height: 1.45;
+  }
+
+h4 {
+    text-align: center;
+    color: black;
+    padding-top: 50px;
+}
+
+  main {
+      background: white;
+      padding-bottom: 50px;
+  }
+
+  h2 {
+      text-align: center;
+      padding-top: 15px;
+  }
+
+  p {
+      text-align: center;
+      padding-left: 15px;
+      padding-right: 15px;
+      line-height: 1.45;
+  }
+
+  #marketing {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: block;
+    width: 90%;
+  }
+
+  #search {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    display: block;
+    width: 90%;
+  }
+
+  #travel {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    display: block;
+    width: 90%;
+  }
+
+  #map {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    display: block;
+    width: 90%;
+  }
+
+  #gallery {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    display: block;
+    width: 90%;
+  }
+
+  #calculator {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    display: block;
+    width: 90%;
+  }
+
+  #more-info {
+    text-align: center;
+    color: rgba(167, 164, 164, 0.932);
+    margin: auto;
+    padding: 10px 10px 15px 10px;
+    line-height: 1.45;
+  }
+
+  .main-footer {
+      display: inline;
+  }
+
+  #contact {
+      padding-bottom: 40px;
+  }
+
+  #student-name {
+      float: left;
+  }
+
+  #return {
+      float: right;
+  }
+
+#fhome {
+    display: none;
+}
+
+#fportfolio {
+    display: none;
+}
+
+#fcontact {
+    display: none;
+}
+  /* Styles for larger screens */
+
+  @media (min-width: 768px) {
+
+  .container {
+      width: 90%;
+      margin: 0 auto;
+  }
+
+  .name {
+      margin-bottom: 5px;
+  }
+
+  .main-nav,
+  .name {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-nav li {
+      display: inline;
+      background: none;
+  }
+    
+  .info {
+      width: 60%;
+      margin-top: 50px;
+      text-align: left;
+  }
+    
+  #profile-image {
+        float: right;
+        width: 40%;
+        margin-bottom: 30px;
+    }
+
+    .col {
+        float: left;
+    }
+
+    .primary,
+    .secondary {
+        width: 50%;
+    }
+
+    #marketing {
+        margin-top: 40px;
+    }
+
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    #more-info {
+        width: 80%;
+    }
+
+    #return {
+        display: none;
+  }
+
+  #fhome,
+  #fportfolio,
+  #fcontact {
+      display: inline;
+      float: right;
+  }
+}
+
+  @media (min-width: 1024px) {
+
+    .name,
+    .main-nav {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        flex-basis: 0;
+    }
+    
+      .container {
+        width: 80%;
+        max-width: 1150px;
+    }
+
+    .col {
+        float: left;
+    }
+    
+    .first,
+    .second,
+    .third {
+        width: 33.3%;
+    }
+
+    main {
+        margin: 0px 15px;
+    }
+}
