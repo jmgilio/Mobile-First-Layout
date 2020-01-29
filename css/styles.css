@@ -85,7 +85,7 @@ h4 {
 }
 
   main {
-      background: white;
+      background: rgb(163, 233, 161);
       padding-bottom: 50px;
   }
 
@@ -101,6 +101,10 @@ h4 {
       line-height: 1.45;
   }
 
+  .capt {
+    height: 100px;
+  }
+  
   #marketing {
     margin-left: auto;
     margin-right: auto;
@@ -153,7 +157,7 @@ h4 {
     text-align: center;
     color: rgba(167, 164, 164, 0.932);
     margin: auto;
-    padding: 10px 10px 15px 10px;
+    padding: 10px 20px 15px 20px;
     line-height: 1.45;
   }
 
@@ -169,21 +173,20 @@ h4 {
       float: left;
   }
 
-  #return {
-      float: right;
-  }
-
-#fhome {
+.fhome,
+.fportfolio,
+.fcontact {
     display: none;
 }
 
-#fportfolio {
-    display: none;
+.footer-nav {
+  float: right;
 }
 
-#fcontact {
-    display: none;
+.footer-nav li {
+  padding: 20px;
 }
+
   /* Styles for larger screens */
 
   @media (min-width: 768px) {
@@ -242,29 +245,46 @@ h4 {
         width: 80%;
     }
 
-    #return {
-        display: none;
+  .footer-nav {
+    float: right;
   }
 
-  #fhome,
-  #fportfolio,
-  #fcontact {
-      display: inline;
-      float: right;
+  .footer li {
+    float: left;
+    padding: 20px 10px;
+  }
+
+.fhome,
+.fportfolio,
+.fcontact {
+    display: inline;
+}
+
+  .hide {
+    display: none;
   }
 }
 
   @media (min-width: 1024px) {
 
-    .name,
+    .name {
+      text-align: left;
+    }
+
     .main-nav {
-        flex-direction: row;
-        justify-content: space-between;
-        flex-grow: 1;
-        flex-wrap: wrap;
-        flex-basis: 0;
+      text-align: right;
     }
     
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .info {
+      padding: 0px 20px 0px 0px;
+    }
+
       .container {
         width: 80%;
         max-width: 1150px;
